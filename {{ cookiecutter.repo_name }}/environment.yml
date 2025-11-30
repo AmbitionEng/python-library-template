@@ -2,11 +2,11 @@ name: {{ cookiecutter.repo_name }}
 channels:
   - conda-forge
 dependencies:
-  - python==3.13.0
-  - poetry==1.8.4
-  - pip==24.2
+  - python==3.14.0
+  - poetry==2.2.1
+  - pip==25.3
   {%- if cookiecutter.is_django == "True" %}
-  - postgresql==17.0
+  - postgresql==18.0
   {%- endif %}
 variables:
   {%- if cookiecutter.is_django == "True" %}
